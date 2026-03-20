@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pay Attention — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">Pay Attention</h1>
+        <div class="project-meta">
+          <span>AR</span>
+          <span>Augmented Reality</span>
+          <span>Interactive</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Augmented Reality</span>
+          <span class="tag">Interactive</span>
+          <span class="tag">Mobile</span>
+          <span class="tag">Spatial Design</span>
+        </div>
+        <p class="project-description">
+          <em>Pay Attention</em> is an augmented reality experience that challenges viewers to reconsider their relationship with distraction and focus in everyday environments. Through overlaid digital layers on physical spaces, the work questions how attention is directed, captured, and fragmented in contemporary life. The AR installation prompts users to look more carefully at the world around them, noticing what is typically overlooked.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#cdd4c5;">
+          [ Hero — AR Experience in Environment ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c6ccbe;">
+            [ AR Overlay — Scene 01 ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c5cbbf;">
+            [ AR Overlay — Scene 02 ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#cad1c2;">
+          [ User Interaction Documentation ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c4cbbf;">
+            [ Interface Design ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c7cec2;">
+            [ Process — Storyboard ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#cdd4c5;">
+          [ Exhibition Documentation ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

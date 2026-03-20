@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="about-page">
+      <h1>Yifei Sun</h1>
+
+      <p>
+        Yifei Sun is a designer, artist, and creative technologist working across photography, game design, motion design, augmented reality, 3D animation, and digital humanities. Her work explores the intersections of technology, play, and human experience — using a range of media to create immersive, thoughtful, and often interactive pieces.
+      </p>
+
+      <p>
+        Rooted in both research and craft, Yifei approaches each project as an opportunity to investigate how we engage with digital systems, how we feel through designed experiences, and how stories are told in non-linear, embodied ways. Her practice spans academic and applied contexts, from game jams and AR installations to museum experiences and editorial design.
+      </p>
+
+      <p>
+        She is based in the United States and is currently studying at the intersection of art, design, and technology.
+      </p>
+
+      <hr class="section-divider" />
+
+      <div class="contact-links">
+        <a href="mailto:hello@yifeisun.com">hello@yifeisun.com</a>
+        <a href="https://yifeisun.myportfolio.com" target="_blank" rel="noopener">yifeisun.myportfolio.com</a>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

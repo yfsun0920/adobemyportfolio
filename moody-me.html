@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MoodyME — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">MoodyME</h1>
+        <div class="project-meta">
+          <span>Game Design</span>
+          <span>Emotional Design</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Game Design</span>
+          <span class="tag">Emotional Design</span>
+          <span class="tag">Mental Health</span>
+          <span class="tag">Illustration</span>
+          <span class="tag">UX</span>
+        </div>
+        <p class="project-description">
+          <em>MoodyME</em> is a game design project centered on emotional expression and self-awareness. Players navigate a world shaped by mood — environments, music, and gameplay mechanics respond dynamically to the emotional state the player selects or discovers through interaction. The project takes seriously the notion that games can be a medium for emotional literacy, offering a gentle, introspective space to explore feelings through play.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#c9d4c5;">
+          [ Hero — Game World Overview ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c2cdbf;">
+            [ Mood State — Happy Environment ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c3cebe;">
+            [ Mood State — Sad Environment ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c7d1c3;">
+          [ Character Expression Sheet ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c4cfbf;">
+            [ UI — Mood Selection Screen ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c5d0c1;">
+            [ Gameplay — World Transition ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c9d4c5;">
+          [ Concept Art — Full Mood Spectrum ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

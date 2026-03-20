@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Night at the Museum — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">Night at the Museum</h1>
+        <div class="project-meta">
+          <span>Digital Humanities</span>
+          <span>Web Design</span>
+          <span>Research</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Digital Humanities</span>
+          <span class="tag">Web Design</span>
+          <span class="tag">Data Visualization</span>
+          <span class="tag">Research</span>
+          <span class="tag">Interactive</span>
+        </div>
+        <p class="project-description">
+          <em>Night at the Museum</em> is a digital humanities project that reimagines the museum experience through an interactive web interface. The work explores how cultural collections can be made more accessible, personal, and dynamic through digital curation and storytelling. Visitors navigate a virtual museum space after closing hours — encountering objects, stories, and connections that are often invisible during daytime visits.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#c5d4d0;">
+          [ Hero — Virtual Museum Entrance ]
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c2d1cd;">
+          [ Website — Full-Page Layout ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#bfcec9;">
+            [ Gallery Room — View 01 ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c0cfcb;">
+            [ Gallery Room — View 02 ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c3d2ce;">
+          [ Object Detail — Artifact with Story ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c1d0cc;">
+            [ Navigation Interface ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c2d1cd;">
+            [ Data Visualization — Collection Map ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c5d4d0;">
+          [ Research Documentation ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

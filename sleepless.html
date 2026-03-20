@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>sleepless in _________ — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">sleepless in _________</h1>
+        <div class="project-meta">
+          <span>Graphic Design</span>
+          <span>Editorial</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Editorial Design</span>
+          <span class="tag">Typography</span>
+          <span class="tag">Print</span>
+          <span class="tag">Zine</span>
+        </div>
+        <p class="project-description">
+          <em>sleepless in _________</em> is a graphic design project exploring insomnia, the quiet hours of the night, and the particular quality of consciousness that emerges when sleep will not come. The blank in the title is intentional — the experience of sleeplessness is both universal and intensely personal, located in a place that is different for everyone. The design work — editorial layout, typography, and imagery — captures the mood of 3am: restless, contemplative, strangely alive.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#ccc5d4;">
+          [ Hero — Cover / Title Page ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c5bece;">
+            [ Spread 01 — Typography ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c6bfcf;">
+            [ Spread 02 — Imagery ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#cac3d2;">
+          [ Full Zine / Publication Spread ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c8c1d0;">
+            [ Interior Layout Detail ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c9c2d1;">
+            [ Type & Texture Study ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#ccc5d4;">
+          [ Physical / Printed Object ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

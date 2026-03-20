@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Ball — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">Flower Ball</h1>
+        <div class="project-meta">
+          <span>Game Design</span>
+          <span>Casual Game</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Game Design</span>
+          <span class="tag">Casual</span>
+          <span class="tag">Illustration</span>
+          <span class="tag">UI Design</span>
+        </div>
+        <p class="project-description">
+          <em>Flower Ball</em> is a casual game design project with a playful, nature-inspired aesthetic. The game centers around a simple but satisfying core mechanic involving blooming flowers and ball physics. The visual design draws from botanical illustration, creating a tactile, organic feel in the game's world. The project explores how a gentle, beautiful aesthetic can coexist with an engaging gameplay loop.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#d4c5d0;">
+          [ Hero — Game Title Screen ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#ccbec8;">
+            [ Gameplay Screenshot — Level 01 ]
+          </div>
+          <div class="project-media-placeholder" style="background:#cdbfc9;">
+            [ Gameplay Screenshot — Level 02 ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#d1c2cc;">
+          [ Character & Object Illustration Sheet ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#cfc0cb;">
+            [ UI Components ]
+          </div>
+          <div class="project-media-placeholder" style="background:#d0c1cc;">
+            [ Level Map Overview ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#d4c5d0;">
+          [ End Screen — Victory Sequence ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lost Horizon — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">Lost Horizon</h1>
+        <div class="project-meta">
+          <span>Game Design</span>
+          <span>Interactive Narrative</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Game Design</span>
+          <span class="tag">Narrative</span>
+          <span class="tag">World Building</span>
+          <span class="tag">Level Design</span>
+        </div>
+        <p class="project-description">
+          <em>Lost Horizon</em> is a game design project that immerses players in an atmospheric journey through landscapes caught between memory and reality. The game explores themes of displacement, longing, and the search for belonging through its environment design, sound, and player mechanics. Each level is crafted as an emotional space — visually and mechanically reflecting the inner state of its protagonist.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#c5c8d4;">
+          [ Hero — Game Environment Concept Art ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#bec2ce;">
+            [ Level Design — Area 01 ]
+          </div>
+          <div class="project-media-placeholder" style="background:#bfc3cf;">
+            [ Level Design — Area 02 ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c3c7d2;">
+          [ Character Design Sheet ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#c0c4d0;">
+            [ Environment Concept — Dawn ]
+          </div>
+          <div class="project-media-placeholder" style="background:#c1c5d1;">
+            [ Environment Concept — Dusk ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c5c8d4;">
+          [ UI / HUD Design ]
+        </div>
+
+        <div class="project-media-placeholder" style="background:#c2c6d2;">
+          [ Gameplay Screenshot — Final Scene ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

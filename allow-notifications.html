@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Allow Notifications — Yifei Sun</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="index.html" class="nav-logo">Yifei Sun</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="nav-menu-toggle" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <main>
+    <div class="project-page">
+      <a href="index.html" class="project-back">All Work</a>
+
+      <div class="project-header">
+        <h1 class="project-title">Allow Notifications</h1>
+        <div class="project-meta">
+          <span>Game Design</span>
+          <span>Interaction Design</span>
+        </div>
+        <div class="tag-list">
+          <span class="tag">Game Design</span>
+          <span class="tag">UX</span>
+          <span class="tag">Critical Design</span>
+          <span class="tag">Mobile</span>
+        </div>
+        <p class="project-description">
+          <em>Allow Notifications</em> is a game that uses the language and conventions of smartphone notification interfaces as its primary mechanic. By appropriating familiar UI patterns — pop-ups, permission dialogs, alerts — the game questions the relationship between users and the apps that compete for their attention. It is both a commentary on digital consent and a playful subversion of mundane interactions we accept without thought.
+        </p>
+      </div>
+
+      <hr class="section-divider" />
+
+      <div class="project-media">
+        <div class="project-media-placeholder" style="background:#d4c5c5;">
+          [ Hero — Game Title Screen ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#ccbebe;">
+            [ Notification UI — Allow Screen ]
+          </div>
+          <div class="project-media-placeholder" style="background:#cdbfbf;">
+            [ Notification UI — Deny Screen ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#d1c2c2;">
+          [ Gameplay Flow — Decision Tree ]
+        </div>
+
+        <div class="project-media-half">
+          <div class="project-media-placeholder" style="background:#cec0c0;">
+            [ Screen Mockup — Level 01 ]
+          </div>
+          <div class="project-media-placeholder" style="background:#cfc1c1;">
+            [ Screen Mockup — Level 02 ]
+          </div>
+        </div>
+
+        <div class="project-media-placeholder" style="background:#d4c5c5;">
+          [ Final Screen — Game Over / Game Won ]
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
