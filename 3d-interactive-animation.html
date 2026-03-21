@@ -7,85 +7,115 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-  <nav>
-    <a href="index.html" class="nav-logo">Yifei Sun</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="nav-menu-toggle" onclick="toggleMenu()">
+  <!-- MOBILE TOP BAR -->
+  <div class="mobile-bar">
+    <a href="index.html" class="mobile-bar-logo">YIFEI SUN</a>
+    <button class="mobile-bar-hamburger" onclick="openMenu()" aria-label="Open menu">
       <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- MOBILE MENU OVERLAY -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close" onclick="closeMenu()">&#x2715;</button>
+    <a href="about.html" class="mobile-menu-about">About</a>
+    <div class="mobile-menu-section">
+      <span class="mobile-menu-section-title">Game &amp; Interactive Design</span>
+      <ul>
+        <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+        <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+        <li><a href="pay-attention.html">Pay Attention</a></li>
+        <li><a href="lost-horizon.html">Lost Horizon</a></li>
+        <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+        <li><a href="allow-notifications.html">Allow Notifications</a></li>
+        <li><a href="flower-ball.html">Flower Ball</a></li>
+        <li><a href="moody-me.html">MoodyME</a></li>
+        <li><a href="a-window.html">A Window</a></li>
+        <li><a href="cura.html">Cura</a></li>
+        <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+      </ul>
     </div>
-  </nav>
+    <div class="mobile-menu-section">
+      <span class="mobile-menu-section-title">Motion &amp; Video</span>
+      <ul>
+        <li><a href="wheels.html">Wheels</a></li>
+        <li><a href="bubble.html">Bubble</a></li>
+        <li><a href="sunflower.html">Sunflower</a></li>
+      </ul>
+    </div>
+    <div class="mobile-menu-section">
+      <span class="mobile-menu-section-title">Installations</span>
+      <ul><li><a href="found.html">Found</a></li></ul>
+    </div>
+    <div class="mobile-menu-section">
+      <span class="mobile-menu-section-title">Photography</span>
+      <ul><li><a href="in-the-mist.html">In the Mist</a></li></ul>
+    </div>
+  </div>
 
-  <main>
-    <div class="project-page">
-      <a href="index.html" class="project-back">All Work</a>
+  <div class="project-layout">
+    <aside class="project-sidebar">
+      <a href="index.html" class="sidebar-logo">YIFEI SUN</a>
+      <a href="about.html" class="sidebar-about">About</a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Game &amp; Interactive Design</span>
+        <ul>
+          <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+          <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+          <li><a href="pay-attention.html">Pay Attention</a></li>
+          <li><a href="lost-horizon.html">Lost Horizon</a></li>
+          <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+          <li><a href="allow-notifications.html">Allow Notifications</a></li>
+          <li><a href="flower-ball.html">Flower Ball</a></li>
+          <li><a href="moody-me.html">MoodyME</a></li>
+          <li><a href="a-window.html">A Window</a></li>
+          <li><a href="cura.html">Cura</a></li>
+          <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Motion &amp; Video</span>
+        <ul>
+          <li><a href="wheels.html">Wheels</a></li>
+          <li><a href="bubble.html">Bubble</a></li>
+          <li><a href="sunflower.html">Sunflower</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Installations</span>
+        <ul><li><a href="found.html">Found</a></li></ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Photography</span>
+        <ul><li><a href="in-the-mist.html">In the Mist</a></li></ul>
+      </div>
+    </aside>
 
+    <main class="project-content">
       <div class="project-header">
         <h1 class="project-title">3D Interactive Animation</h1>
-        <div class="project-meta">
-          <span>3D</span>
-          <span>Animation</span>
-          <span>Interactive</span>
-        </div>
-        <div class="tag-list">
-          <span class="tag">3D Modeling</span>
-          <span class="tag">Animation</span>
-          <span class="tag">Interactive</span>
-          <span class="tag">Real-Time</span>
-        </div>
-        <p class="project-description">
-          An interactive 3D animation experience that invites viewers to engage with animated environments in real time. The project merges principles of 3D modeling, rigging, and animation with interactive design, creating a dynamic piece where user input shapes the narrative flow and visual outcome. Built with a focus on immersive storytelling through motion and spatial composition.
-        </p>
+        <p class="project-subtitle">3D &amp; Interactive</p>
       </div>
 
-      <hr class="section-divider" />
+      <div class="project-hero">
+        <div class="hero-placeholder" style="background:#c5ccd4;"></div>
+      </div>
+
+      <div class="play-btn-wrap">
+        <a class="play-btn" href="https://yifeisun.myportfolio.com/a-photo-studio" target="_blank" rel="noopener noreferrer">View Project</a>
+      </div>
+
+      <div class="project-section">
+        <p class="project-section-title">ABOUT:</p>
+        <p>An interactive 3D animation experience that invites viewers to engage with animated environments in real time. The project merges principles of 3D modeling, rigging, and animation with interactive design, creating a dynamic piece where user input shapes the narrative flow and visual outcome.</p>
+      </div>
 
       <div class="project-media">
-        <div class="project-media-placeholder" style="background:#c5ccd4;">
-          [ Hero — 3D Scene Overview ]
-        </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#bec5ce;">
-            [ Character Model — Front View ]
-          </div>
-          <div class="project-media-placeholder" style="background:#bdc4cc;">
-            [ Character Model — Side View ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#c2c9d2;">
-          [ Animation Sequence — Key Frame 01 ]
-        </div>
-
-        <div class="project-media-placeholder" style="background:#c5ccd4;">
-          [ Animation Sequence — Key Frame 02 ]
-        </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#bfc6cf;">
-            [ Wireframe Study ]
-          </div>
-          <div class="project-media-placeholder" style="background:#c0c7d0;">
-            [ Texture Detail ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#c3cad3;">
-          [ Interactive Demo — Environment View ]
-        </div>
+        <div class="media-placeholder" style="background:#bec5ce; aspect-ratio:16/9;"></div>
+        <div class="media-placeholder" style="background:#c2c9d2; aspect-ratio:16/9;"></div>
       </div>
-    </div>
-  </main>
-
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
-  </script>
+    </main>
+  </div>
   <script>
     function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
     function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
