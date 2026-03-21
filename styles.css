@@ -194,56 +194,111 @@ a {
   overflow-y: auto;
 }
 
-.project-content {
-  flex: 1;
-  padding: 40px 60px 80px 20px;
-  max-width: 860px;
-}
-
-.project-back {
-  display: inline-block;
-  font-size: 11px;
-  color: var(--text-light);
-  margin-bottom: 36px;
-  letter-spacing: 0.04em;
-}
-
-.project-back:hover {
+/* Active sidebar link = strikethrough */
+.sidebar-section ul a.active {
+  text-decoration: line-through;
   color: var(--text);
 }
 
-.project-back::before {
-  content: '← ';
+.project-content {
+  flex: 1;
+  padding: 36px 48px 80px 40px;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 28px;
 }
 
 .project-title {
   font-family: var(--font);
   font-size: 22px;
   font-weight: bold;
-  margin-bottom: 6px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
 }
 
 .project-subtitle {
   font-family: var(--font);
   font-size: 13px;
   color: var(--text-light);
-  margin-bottom: 30px;
 }
 
-.project-description {
+.project-hero {
+  width: 100%;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.project-hero img {
+  width: 100%;
+  display: block;
+}
+
+.hero-placeholder {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: #bbb;
+  font-family: var(--font);
+}
+
+.play-btn-wrap {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.play-btn {
+  display: inline-block;
+  background: #1a1a1a;
+  color: #fff;
   font-family: var(--font);
   font-size: 13px;
-  line-height: 1.9;
-  color: #333;
+  padding: 12px 32px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.play-btn:hover {
+  opacity: 0.75;
+}
+
+.project-section {
   max-width: 640px;
-  margin-bottom: 48px;
+  margin: 0 auto 40px;
+}
+
+.project-section-title {
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+}
+
+.project-section p,
+.project-section li {
+  font-family: var(--font);
+  font-size: 13px;
+  line-height: 2;
+  color: #444;
+}
+
+.project-section ul {
+  list-style: none;
 }
 
 .project-media {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  margin-bottom: 40px;
 }
 
 .project-media img,
