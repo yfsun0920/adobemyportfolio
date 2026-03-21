@@ -137,16 +137,9 @@ a {
 .card-image {
   width: 100%;
   aspect-ratio: 4/3;
-  background: #e8e8e8;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #f0f0f0;
   overflow: hidden;
   transition: opacity 0.2s;
-  font-size: 11px;
-  color: #aaa;
-  text-align: center;
-  padding: 10px;
 }
 
 .card-image img {
