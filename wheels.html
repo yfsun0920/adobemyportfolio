@@ -7,80 +7,64 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="project-layout">
+    <aside class="project-sidebar">
+      <a href="index.html" class="sidebar-logo">YIFEI SUN</a>
+      <a href="about.html" class="sidebar-about">About</a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Game &amp; Interactive Design</span>
+        <ul>
+          <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+          <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+          <li><a href="pay-attention.html">Pay Attention</a></li>
+          <li><a href="lost-horizon.html">Lost Horizon</a></li>
+          <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+          <li><a href="allow-notifications.html">Allow Notifications</a></li>
+          <li><a href="flower-ball.html">Flower Ball</a></li>
+          <li><a href="moody-me.html">MoodyME</a></li>
+          <li><a href="a-window.html">A Window</a></li>
+          <li><a href="cura.html">Cura</a></li>
+          <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Motion &amp; Video</span>
+        <ul>
+          <li><a href="wheels.html">Wheels</a></li>
+          <li><a href="bubble.html">Bubble</a></li>
+          <li><a href="sunflower.html">Sunflower</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Installations</span>
+        <ul><li><a href="found.html">Found</a></li></ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Photography</span>
+        <ul><li><a href="in-the-mist.html">In the Mist</a></li></ul>
+      </div>
+    </aside>
 
-  <nav>
-    <a href="index.html" class="nav-logo">Yifei Sun</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="nav-menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-
-  <main>
-    <div class="project-page">
+    <main class="project-content">
       <a href="index.html" class="project-back">All Work</a>
-
-      <div class="project-header">
-        <h1 class="project-title">Wheels</h1>
-        <div class="project-meta">
-          <span>3D Modeling</span>
-          <span>Animation</span>
-        </div>
-        <div class="tag-list">
-          <span class="tag">3D Modeling</span>
-          <span class="tag">Animation</span>
-          <span class="tag">Maya</span>
-          <span class="tag">Rendering</span>
-          <span class="tag">Character Design</span>
-        </div>
-        <p class="project-description">
-          <em>Wheels</em> is a 3D modeling and animation project that explores movement, mobility, and form through a character or object centered on the motif of wheels. The project demonstrates technical proficiency in 3D modeling, rigging, and animation, while developing a distinct visual language through texture, lighting, and rendering choices. The animation tells a compact story through physical motion and spatial relationship.
-        </p>
-      </div>
-
+      <h1 class="project-title">Wheels</h1>
+      <p class="project-subtitle">3D Modeling and Animation</p>
+      <p class="project-description">Wheels is a 3D modeling and animation project that explores movement, mobility, and form through a character or object centered on the motif of wheels. The project demonstrates technical proficiency in 3D modeling, rigging, and animation, while developing a distinct visual language through texture, lighting, and rendering.</p>
       <hr class="section-divider" />
-
       <div class="project-media">
-        <div class="project-media-placeholder" style="background:#d0c5d4;">
-          [ Hero — 3D Render, Final Shot ]
+        <div class="media-placeholder" style="background:#2a1a3a; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#251535;"></div>
+          <div class="media-placeholder" style="background:#251535;"></div>
         </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#c8bece;">
-            [ Model Turnaround — Front ]
-          </div>
-          <div class="project-media-placeholder" style="background:#c9bfcf;">
-            [ Model Turnaround — Back ]
-          </div>
+        <div class="media-placeholder" style="background:#2a1a3a; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#301e42;"></div>
+          <div class="media-placeholder" style="background:#301e42;"></div>
         </div>
-
-        <div class="project-media-placeholder" style="background:#cdc3d1;">
-          [ Wireframe — Full Model ]
-        </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#cbc0d0;">
-            [ Texture Sheets ]
-          </div>
-          <div class="project-media-placeholder" style="background:#ccc1d1;">
-            [ Rigging Diagram ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#d0c5d4;">
-          [ Animation Still — Motion Sequence ]
-        </div>
+        <div class="media-placeholder" style="background:#251535; aspect-ratio:16/9;"></div>
       </div>
-    </div>
-  </main>
-
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
-  </script>
+    </main>
+  </div>
 </body>
 </html>

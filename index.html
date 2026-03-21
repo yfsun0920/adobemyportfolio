@@ -8,168 +8,190 @@
 </head>
 <body>
 
-  <nav>
-    <a href="index.html" class="nav-logo">Yifei Sun</a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Work</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="nav-menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
+  <div class="home-layout">
 
-  <main>
-    <div class="project-grid">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <a href="index.html" class="sidebar-logo">YIFEI SUN</a>
+      <a href="about.html" class="sidebar-about">About</a>
 
-      <a href="a-photo-studio.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#d4cfc9;">
-          <span>A Photo Studio</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">A Photo Studio</div>
-          <div class="project-card-tag">Photography</div>
-        </div>
-      </a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Game &amp; Interactive Design</span>
+        <ul>
+          <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+          <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+          <li><a href="pay-attention.html">Pay Attention</a></li>
+          <li><a href="lost-horizon.html">Lost Horizon</a></li>
+          <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+          <li><a href="allow-notifications.html">Allow Notifications</a></li>
+          <li><a href="flower-ball.html">Flower Ball</a></li>
+          <li><a href="moody-me.html">MoodyME</a></li>
+          <li><a href="a-window.html">A Window</a></li>
+          <li><a href="cura.html">Cura</a></li>
+          <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+        </ul>
+      </div>
 
-      <a href="3d-interactive-animation.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#c5ccd4;">
-          <span>3D Interactive Animation</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">3D Interactive Animation</div>
-          <div class="project-card-tag">3D / Animation</div>
-        </div>
-      </a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Motion &amp; Video</span>
+        <ul>
+          <li><a href="wheels.html">Wheels</a></li>
+          <li><a href="bubble.html">Bubble</a></li>
+          <li><a href="sunflower.html">Sunflower</a></li>
+        </ul>
+      </div>
 
-      <a href="pay-attention.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#cdd4c5;">
-          <span>Pay Attention</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Pay Attention</div>
-          <div class="project-card-tag">AR / Augmented Reality</div>
-        </div>
-      </a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Installations</span>
+        <ul>
+          <li><a href="found.html">Found</a></li>
+        </ul>
+      </div>
 
-      <a href="lost-horizon.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#c5c8d4;">
-          <span>Lost Horizon</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Lost Horizon</div>
-          <div class="project-card-tag">Game Design</div>
-        </div>
-      </a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Photography</span>
+        <ul>
+          <li><a href="in-the-mist.html">In the Mist</a></li>
+        </ul>
+      </div>
+    </aside>
 
-      <a href="allow-notifications.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#d4c5c5;">
-          <span>Allow Notifications</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Allow Notifications</div>
-          <div class="project-card-tag">Game Design</div>
-        </div>
-      </a>
+    <!-- PROJECT GRID -->
+    <main class="grid-area">
+      <div class="project-grid">
 
-      <a href="night-at-the-museum.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#c5d4d0;">
-          <span>Night at the Museum</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Night at the Museum</div>
-          <div class="project-card-tag">Digital Humanities / Web Design</div>
-        </div>
-      </a>
+        <a href="a-photo-studio.html" class="project-card">
+          <div class="card-image" style="background:#b8b5b8;">[ A Photo Studio ]</div>
+          <div class="card-info">
+            <span class="card-title">A Photo Studio</span>
+            <span class="card-subtitle">3D Interactive Animation</span>
+          </div>
+        </a>
 
-      <a href="digital-humanities.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#d4d0c5;">
-          <span>Digital Humanities Research &amp; Web Design</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Digital Humanities Research &amp; Web Design</div>
-          <div class="project-card-tag">Research / Web</div>
-        </div>
-      </a>
+        <a href="pay-attention.html" class="project-card">
+          <div class="card-image" style="background:#8b6fb5;">[ Pay Attention ]</div>
+          <div class="card-info">
+            <span class="card-title">Pay Attention</span>
+            <span class="card-subtitle">AR</span>
+          </div>
+        </a>
 
-      <a href="flower-ball.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#d4c5d0;">
-          <span>Flower Ball</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Flower Ball</div>
-          <div class="project-card-tag">Game Design</div>
-        </div>
-      </a>
+        <a href="lost-horizon.html" class="project-card">
+          <div class="card-image" style="background:#b5c8d8;">[ Lost Horizon ]</div>
+          <div class="card-info">
+            <span class="card-title">Lost Horizon</span>
+            <span class="card-subtitle">Game Design</span>
+          </div>
+        </a>
 
-      <a href="moody-me.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#c9d4c5;">
-          <span>MoodyME</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">MoodyME</div>
-          <div class="project-card-tag">Game Design</div>
-        </div>
-      </a>
+        <a href="allow-notifications.html" class="project-card">
+          <div class="card-image" style="background:#1a1a1a;">[ Allow Notifications ]</div>
+          <div class="card-info">
+            <span class="card-title">Allow Notifications</span>
+            <span class="card-subtitle">Game Design</span>
+          </div>
+        </a>
 
-      <a href="cura.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#c5cad4;">
-          <span>Cura</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Cura</div>
-          <div class="project-card-tag">Motion Design</div>
-        </div>
-      </a>
+        <a href="night-at-the-museum.html" class="project-card">
+          <div class="card-image" style="background:#3a3a45;">[ Night at the Museum ]</div>
+          <div class="card-info">
+            <span class="card-title">Night at the Museum</span>
+            <span class="card-subtitle">Digital Humanities Research &amp; Web Design</span>
+          </div>
+        </a>
 
-      <a href="wheels.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#d0c5d4;">
-          <span>Wheels</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Wheels</div>
-          <div class="project-card-tag">3D Modeling &amp; Animation</div>
-        </div>
-      </a>
+        <a href="flower-ball.html" class="project-card">
+          <div class="card-image" style="background:#7dc87d;">[ Flower Ball ]</div>
+          <div class="card-info">
+            <span class="card-title">Flower Ball</span>
+            <span class="card-subtitle">Game Design</span>
+          </div>
+        </a>
 
-      <a href="a-window.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#c5d4d4;">
-          <span>A Window</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">A Window</div>
-          <div class="project-card-tag">Creative Coding</div>
-        </div>
-      </a>
+        <a href="moody-me.html" class="project-card">
+          <div class="card-image" style="background:#e8834a;">[ MoodyME ]</div>
+          <div class="card-info">
+            <span class="card-title">MoodyME</span>
+            <span class="card-subtitle">Game Design</span>
+          </div>
+        </a>
 
-      <a href="game-for-good.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#d4d4c5;">
-          <span>Game for Good Game Jam</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">Game for Good Game Jam</div>
-          <div class="project-card-tag">Graphic Design</div>
-        </div>
-      </a>
+        <a href="cura.html" class="project-card">
+          <div class="card-image" style="background:#1a2a3a;">[ Cura ]</div>
+          <div class="card-info">
+            <span class="card-title">Cura</span>
+            <span class="card-subtitle">Motion Design</span>
+          </div>
+        </a>
 
-      <a href="sleepless.html" class="project-card">
-        <div class="project-card-placeholder" style="background:#ccc5d4;">
-          <span>sleepless in _________</span>
-        </div>
-        <div class="project-card-overlay">
-          <div class="project-card-title">sleepless in _________</div>
-          <div class="project-card-tag">Graphic Design</div>
-        </div>
-      </a>
+        <a href="wheels.html" class="project-card">
+          <div class="card-image" style="background:#2a1a3a;">[ Wheels ]</div>
+          <div class="card-info">
+            <span class="card-title">Wheels</span>
+            <span class="card-subtitle">3D Modeling and Animation</span>
+          </div>
+        </a>
 
-    </div>
-  </main>
+        <a href="sincerely-me.html" class="project-card">
+          <div class="card-image" style="background:#c8b8a8;">[ Sincerely, Me ]</div>
+          <div class="card-info">
+            <span class="card-title">Sincerely, Me</span>
+            <span class="card-subtitle">Game &amp; Interactive Design</span>
+          </div>
+        </a>
 
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
-  </script>
+        <a href="a-window.html" class="project-card">
+          <div class="card-image" style="background:#a8c8c8;">[ A Window ]</div>
+          <div class="card-info">
+            <span class="card-title">A Window</span>
+            <span class="card-subtitle">Creative Coding</span>
+          </div>
+        </a>
+
+        <a href="game-for-good.html" class="project-card">
+          <div class="card-image" style="background:#d8c888;">[ Game for Good Game Jam ]</div>
+          <div class="card-info">
+            <span class="card-title">Game for Good Game Jam</span>
+            <span class="card-subtitle">Graphic Design</span>
+          </div>
+        </a>
+
+        <a href="bubble.html" class="project-card">
+          <div class="card-image" style="background:#a8b8d8;">[ Bubble ]</div>
+          <div class="card-info">
+            <span class="card-title">Bubble</span>
+            <span class="card-subtitle">Motion &amp; Video</span>
+          </div>
+        </a>
+
+        <a href="sunflower.html" class="project-card">
+          <div class="card-image" style="background:#e8c840;">[ Sunflower ]</div>
+          <div class="card-info">
+            <span class="card-title">Sunflower</span>
+            <span class="card-subtitle">Motion &amp; Video</span>
+          </div>
+        </a>
+
+        <a href="found.html" class="project-card">
+          <div class="card-image" style="background:#c8c8b8;">[ Found ]</div>
+          <div class="card-info">
+            <span class="card-title">Found</span>
+            <span class="card-subtitle">Installation</span>
+          </div>
+        </a>
+
+        <a href="in-the-mist.html" class="project-card">
+          <div class="card-image" style="background:#c0c8d0;">[ In the Mist ]</div>
+          <div class="card-info">
+            <span class="card-title">In the Mist</span>
+            <span class="card-subtitle">Photography</span>
+          </div>
+        </a>
+
+      </div>
+    </main>
+
+  </div>
 
 </body>
 </html>

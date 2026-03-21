@@ -7,80 +7,64 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="project-layout">
+    <aside class="project-sidebar">
+      <a href="index.html" class="sidebar-logo">YIFEI SUN</a>
+      <a href="about.html" class="sidebar-about">About</a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Game &amp; Interactive Design</span>
+        <ul>
+          <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+          <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+          <li><a href="pay-attention.html">Pay Attention</a></li>
+          <li><a href="lost-horizon.html">Lost Horizon</a></li>
+          <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+          <li><a href="allow-notifications.html">Allow Notifications</a></li>
+          <li><a href="flower-ball.html">Flower Ball</a></li>
+          <li><a href="moody-me.html">MoodyME</a></li>
+          <li><a href="a-window.html">A Window</a></li>
+          <li><a href="cura.html">Cura</a></li>
+          <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Motion &amp; Video</span>
+        <ul>
+          <li><a href="wheels.html">Wheels</a></li>
+          <li><a href="bubble.html">Bubble</a></li>
+          <li><a href="sunflower.html">Sunflower</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Installations</span>
+        <ul><li><a href="found.html">Found</a></li></ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Photography</span>
+        <ul><li><a href="in-the-mist.html">In the Mist</a></li></ul>
+      </div>
+    </aside>
 
-  <nav>
-    <a href="index.html" class="nav-logo">Yifei Sun</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="nav-menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-
-  <main>
-    <div class="project-page">
+    <main class="project-content">
       <a href="index.html" class="project-back">All Work</a>
-
-      <div class="project-header">
-        <h1 class="project-title">Game for Good Game Jam</h1>
-        <div class="project-meta">
-          <span>Graphic Design</span>
-          <span>Game Jam</span>
-        </div>
-        <div class="tag-list">
-          <span class="tag">Graphic Design</span>
-          <span class="tag">Game Jam</span>
-          <span class="tag">Visual Identity</span>
-          <span class="tag">Branding</span>
-          <span class="tag">Print</span>
-        </div>
-        <p class="project-description">
-          Created for a Game for Good game jam, this graphic design project encompasses the visual identity and communication materials for a socially conscious game development event. The design work spans logo, branding system, promotional materials, and game jam assets. The visual language reflects the spirit of the event — collaborative, purposeful, and optimistic — communicating that games can be a force for positive change.
-        </p>
-      </div>
-
+      <h1 class="project-title">Game for Good Game Jam</h1>
+      <p class="project-subtitle">Graphic Design</p>
+      <p class="project-description">Created for a Game for Good game jam, this graphic design project encompasses the visual identity and communication materials for a socially conscious game development event. The design work spans logo, branding system, promotional materials, and game jam assets.</p>
       <hr class="section-divider" />
-
       <div class="project-media">
-        <div class="project-media-placeholder" style="background:#d4d4c5;">
-          [ Hero — Brand Identity Overview ]
+        <div class="media-placeholder" style="background:#d8c888; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#ccbc7c;"></div>
+          <div class="media-placeholder" style="background:#ccbc7c;"></div>
         </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#cdcdbf;">
-            [ Logo Variations ]
-          </div>
-          <div class="project-media-placeholder" style="background:#cecec0;">
-            [ Color System ]
-          </div>
+        <div class="media-placeholder" style="background:#d8c888; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#e0d090;"></div>
+          <div class="media-placeholder" style="background:#e0d090;"></div>
         </div>
-
-        <div class="project-media-placeholder" style="background:#d2d2c3;">
-          [ Promotional Poster ]
-        </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#d0d0c2;">
-            [ Event Signage ]
-          </div>
-          <div class="project-media-placeholder" style="background:#d1d1c2;">
-            [ Digital Assets ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#d4d4c5;">
-          [ Full Brand Guidelines ]
-        </div>
+        <div class="media-placeholder" style="background:#ccbc7c; aspect-ratio:16/9;"></div>
       </div>
-    </div>
-  </main>
-
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
-  </script>
+    </main>
+  </div>
 </body>
 </html>

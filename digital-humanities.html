@@ -7,85 +7,64 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="project-layout">
+    <aside class="project-sidebar">
+      <a href="index.html" class="sidebar-logo">YIFEI SUN</a>
+      <a href="about.html" class="sidebar-about">About</a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Game &amp; Interactive Design</span>
+        <ul>
+          <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+          <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+          <li><a href="pay-attention.html">Pay Attention</a></li>
+          <li><a href="lost-horizon.html">Lost Horizon</a></li>
+          <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+          <li><a href="allow-notifications.html">Allow Notifications</a></li>
+          <li><a href="flower-ball.html">Flower Ball</a></li>
+          <li><a href="moody-me.html">MoodyME</a></li>
+          <li><a href="a-window.html">A Window</a></li>
+          <li><a href="cura.html">Cura</a></li>
+          <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Motion &amp; Video</span>
+        <ul>
+          <li><a href="wheels.html">Wheels</a></li>
+          <li><a href="bubble.html">Bubble</a></li>
+          <li><a href="sunflower.html">Sunflower</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Installations</span>
+        <ul><li><a href="found.html">Found</a></li></ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Photography</span>
+        <ul><li><a href="in-the-mist.html">In the Mist</a></li></ul>
+      </div>
+    </aside>
 
-  <nav>
-    <a href="index.html" class="nav-logo">Yifei Sun</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="nav-menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-
-  <main>
-    <div class="project-page">
+    <main class="project-content">
       <a href="index.html" class="project-back">All Work</a>
-
-      <div class="project-header">
-        <h1 class="project-title">Digital Humanities Research &amp; Web Design</h1>
-        <div class="project-meta">
-          <span>Research</span>
-          <span>Web Design</span>
-          <span>Digital Humanities</span>
-        </div>
-        <div class="tag-list">
-          <span class="tag">Digital Humanities</span>
-          <span class="tag">Web Design</span>
-          <span class="tag">Research</span>
-          <span class="tag">Information Architecture</span>
-          <span class="tag">Typography</span>
-        </div>
-        <p class="project-description">
-          This project represents an intersection of academic research and visual communication. Digital humanities methodologies are applied to design challenges: how do we make complex data and historical narratives accessible to broad audiences through thoughtful web design? The work involves both the analytical rigor of humanities research and the craft of interface and typographic design, resulting in web experiences that communicate scholarly findings in visually engaging ways.
-        </p>
-      </div>
-
+      <h1 class="project-title">Digital Humanities Research &amp; Web Design</h1>
+      <p class="project-subtitle">Research / Web</p>
+      <p class="project-description">This project represents an intersection of academic research and visual communication. Digital humanities methodologies are applied to design challenges: how do we make complex data and historical narratives accessible to broad audiences through thoughtful web design?</p>
       <hr class="section-divider" />
-
       <div class="project-media">
-        <div class="project-media-placeholder" style="background:#d4d0c5;">
-          [ Hero — Website Landing Page ]
+        <div class="media-placeholder" style="background:#d4d0c5; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#c8c4b9;"></div>
+          <div class="media-placeholder" style="background:#c8c4b9;"></div>
         </div>
-
-        <div class="project-media-placeholder" style="background:#d1cdc2;">
-          [ Full-Page Layout — Desktop View ]
+        <div class="media-placeholder" style="background:#d4d0c5; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#dcdacc;"></div>
+          <div class="media-placeholder" style="background:#dcdacc;"></div>
         </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#cecabf;">
-            [ Typography System ]
-          </div>
-          <div class="project-media-placeholder" style="background:#cfcbc0;">
-            [ Color & Layout Grid ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#d2cec3;">
-          [ Data Visualization Section ]
-        </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#d0ccbf;">
-            [ Mobile View ]
-          </div>
-          <div class="project-media-placeholder" style="background:#cfcbbe;">
-            [ Interactive Feature — Expanded ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#d4d0c5;">
-          [ Research Poster / Summary ]
-        </div>
+        <div class="media-placeholder" style="background:#c8c4b9; aspect-ratio:16/9;"></div>
       </div>
-    </div>
-  </main>
-
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
-  </script>
+    </main>
+  </div>
 </body>
 </html>

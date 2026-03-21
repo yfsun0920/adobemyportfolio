@@ -7,79 +7,64 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="project-layout">
+    <aside class="project-sidebar">
+      <a href="index.html" class="sidebar-logo">YIFEI SUN</a>
+      <a href="about.html" class="sidebar-about">About</a>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Game &amp; Interactive Design</span>
+        <ul>
+          <li><a href="sincerely-me.html">Sincerely, Me</a></li>
+          <li><a href="a-photo-studio.html">A Photo Studio</a></li>
+          <li><a href="pay-attention.html">Pay Attention</a></li>
+          <li><a href="lost-horizon.html">Lost Horizon</a></li>
+          <li><a href="night-at-the-museum.html">Night at the Museum</a></li>
+          <li><a href="allow-notifications.html">Allow Notifications</a></li>
+          <li><a href="flower-ball.html">Flower Ball</a></li>
+          <li><a href="moody-me.html">MoodyME</a></li>
+          <li><a href="a-window.html">A Window</a></li>
+          <li><a href="cura.html">Cura</a></li>
+          <li><a href="game-for-good.html">Game for Good Game Jam</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Motion &amp; Video</span>
+        <ul>
+          <li><a href="wheels.html">Wheels</a></li>
+          <li><a href="bubble.html">Bubble</a></li>
+          <li><a href="sunflower.html">Sunflower</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Installations</span>
+        <ul><li><a href="found.html">Found</a></li></ul>
+      </div>
+      <div class="sidebar-section">
+        <span class="sidebar-section-title">Photography</span>
+        <ul><li><a href="in-the-mist.html">In the Mist</a></li></ul>
+      </div>
+    </aside>
 
-  <nav>
-    <a href="index.html" class="nav-logo">Yifei Sun</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <div class="nav-menu-toggle" onclick="toggleMenu()">
-      <span></span><span></span><span></span>
-    </div>
-  </nav>
-
-  <main>
-    <div class="project-page">
+    <main class="project-content">
       <a href="index.html" class="project-back">All Work</a>
-
-      <div class="project-header">
-        <h1 class="project-title">A Photo Studio</h1>
-        <div class="project-meta">
-          <span>Photography</span>
-          <span>Studio</span>
-        </div>
-        <div class="tag-list">
-          <span class="tag">Photography</span>
-          <span class="tag">Studio</span>
-          <span class="tag">Lighting</span>
-          <span class="tag">Portrait</span>
-        </div>
-        <p class="project-description">
-          A collection of studio photography exploring light, shadow, and form. This project investigates the interplay between subjects and controlled lighting environments, creating images that balance technical precision with artistic expression. Each photograph is carefully composed to tell a visual story within the contained space of a studio setting.
-        </p>
-      </div>
-
+      <h1 class="project-title">A Photo Studio</h1>
+      <p class="project-subtitle">3D Interactive Animation</p>
+      <p class="project-description">A collection of studio photography and 3D interactive animation exploring light, shadow, and form. This project investigates the interplay between subjects and controlled lighting environments, merging photographic precision with interactive 3D elements.</p>
       <hr class="section-divider" />
-
       <div class="project-media">
-        <div class="project-media-placeholder" style="aspect-ratio:16/10; background:#d4cfc9;">
-          [ Hero Image — Studio Setup ]
+        <div class="media-placeholder" style="background:#b8b5b8; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#aaa7aa;"></div>
+          <div class="media-placeholder" style="background:#aaa7aa;"></div>
         </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#ccc7c0;">
-            [ Portrait Study 01 ]
-          </div>
-          <div class="project-media-placeholder" style="background:#c8c3bc;">
-            [ Portrait Study 02 ]
-          </div>
+        <div class="media-placeholder" style="background:#b8b5b8; aspect-ratio:16/9;"></div>
+        <div class="media-row">
+          <div class="media-placeholder" style="background:#bcb9bc;"></div>
+          <div class="media-placeholder" style="background:#bcb9bc;"></div>
         </div>
-
-        <div class="project-media-placeholder" style="background:#d0ccc6;">
-          [ Full-width Studio Shot ]
-        </div>
-
-        <div class="project-media-half">
-          <div class="project-media-placeholder" style="background:#cbc6bf;">
-            [ Detail — Lighting Setup ]
-          </div>
-          <div class="project-media-placeholder" style="background:#ccc7c1;">
-            [ Detail — Subject Study ]
-          </div>
-        </div>
-
-        <div class="project-media-placeholder" style="background:#d4cfc9;">
-          [ Final Series Image ]
-        </div>
+        <div class="media-placeholder" style="background:#aaa7aa; aspect-ratio:16/9;"></div>
       </div>
-    </div>
-  </main>
-
-  <script>
-    function toggleMenu() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    }
-  </script>
+    </main>
+  </div>
 </body>
 </html>
