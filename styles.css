@@ -2,6 +2,16 @@
    YIFEI SUN PORTFOLIO - STYLES
    =========================== */
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,12 +19,18 @@
 }
 
 :root {
-  --sidebar-width: 210px;
+  --site-max: 1400px;
+  --site-width: 90%;
+  --sidebar-flex: 20%;
+  --sidebar-max: 260px;
+  --cover-ratio: 78.21782%;
   --bg: #ffffff;
-  --text: #111111;
-  --text-light: #888888;
+  /* Adobe MyPortfolio theme (tcyz) */
+  --text: #222222;
+  --text-light: #999999;
+  --text-footer: #dddddd;
   --border: #e8e8e8;
-  --font: 'Courier New', Courier, monospace;
+  --font: 'Roboto Mono', monospace;
 }
 
 body {
@@ -23,6 +39,7 @@ body {
   font-family: var(--font);
   font-size: 13px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 a {
@@ -34,93 +51,129 @@ a {
    HOME LAYOUT: SIDEBAR + GRID
    =========================== */
 
-.home-layout {
+.home-layout,
+.project-layout {
   display: flex;
-  min-height: 100vh;
-  max-width: 1500px;
+  max-width: var(--site-max);
   margin: 0 auto;
+  width: var(--site-width);
+  min-height: 100vh;
 }
 
-/* ===== SIDEBAR ===== */
-.sidebar {
-  width: var(--sidebar-width);
-  flex-shrink: 0;
-  padding: 40px 24px 40px 28px;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
+/* ===== SIDEBAR (shared home + project pages) ===== */
+.sidebar,
+.project-sidebar {
+  flex: 0 0 var(--sidebar-flex);
+  max-width: var(--sidebar-max);
+  padding: 60px 16px 40px 0;
+  box-sizing: border-box;
 }
 
 .sidebar-logo {
   font-family: var(--font);
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
   display: block;
-  margin-bottom: 32px;
-  line-height: 1.2;
+  margin-bottom: 0;
+  line-height: 28px;
 }
 
 .sidebar-logo:hover {
   opacity: 1;
 }
 
+/* Adobe nav .page-title */
 .sidebar-about {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
   color: var(--text-light);
-  margin-bottom: 28px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 .sidebar-about:hover {
   color: var(--text);
 }
 
+/* Adobe nav .group */
 .sidebar-section {
-  margin-bottom: 22px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
+.sidebar-section:last-child {
+  padding-bottom: 0;
+}
+
+/* Adobe nav .gallery-title */
 .sidebar-section-title {
-  font-size: 11px;
-  font-weight: bold;
-  letter-spacing: 0.06em;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--text);
-  margin-bottom: 8px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
   display: block;
+  line-height: 13px;
 }
 
 .sidebar-section ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
+  display: block;
+}
+
+/* Adobe nav .project-title */
+.sidebar-section ul li {
+  padding-bottom: 10px;
+}
+
+.sidebar-section ul li:last-child {
+  padding-bottom: 0;
 }
 
 .sidebar-section ul a {
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 400;
   color: var(--text-light);
   display: block;
   transition: color 0.15s;
-  line-height: 1.6;
+  line-height: 13px;
+  letter-spacing: 0.02em;
 }
 
 .sidebar-section ul a:hover {
   color: var(--text);
 }
 
+.sidebar-section ul a.active,
+.project-sidebar .sidebar-section ul a.active {
+  text-decoration: line-through;
+  color: var(--text);
+}
+
+.sidebar-about.active {
+  text-decoration: line-through;
+  color: var(--text);
+}
+
 /* ===== PROJECT GRID ===== */
 .grid-area {
   flex: 1;
-  padding: 28px 28px 60px 12px;
+  min-width: 0;
+  padding: 0;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 24px 20px;
+  column-gap: 1%;
+  row-gap: 0;
 }
 
 .project-card {
@@ -137,14 +190,24 @@ a {
 }
 
 .card-image {
+  position: relative;
   width: 100%;
-  aspect-ratio: 4/3;
   background: #f0f0f0;
   overflow: hidden;
   transition: opacity 0.2s;
 }
 
+/* Adobe .project-cover.hold-space */
+.card-image::before {
+  content: '';
+  display: block;
+  padding-bottom: var(--cover-ratio);
+}
+
 .card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -153,80 +216,223 @@ a {
 }
 
 .card-info {
-  padding: 8px 0 0;
+  padding: 4% 0 0;
 }
 
 .card-title {
   font-family: var(--font);
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.02em;
   color: var(--text);
   display: block;
-  margin-bottom: 2px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
 }
 
 .card-subtitle {
   font-family: var(--font);
-  font-size: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0.02em;
   color: var(--text-light);
   display: block;
+  padding-top: 2px;
+  padding-bottom: 10px;
 }
 
 /* ===========================
    PROJECT PAGE
    =========================== */
 
-.project-layout {
-  display: flex;
-  min-height: 100vh;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.project-sidebar {
-  width: var(--sidebar-width);
-  flex-shrink: 0;
-  padding: 40px 24px 40px 28px;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
-}
-
-/* Active sidebar link = strikethrough */
-.sidebar-section ul a.active {
-  text-decoration: line-through;
-  color: var(--text);
-}
-
 .project-content {
   flex: 1;
-  padding: 36px 48px 80px 40px;
+  min-width: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Adobe MyPortfolio project header */
 .project-header {
   text-align: center;
-  margin-bottom: 28px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .project-title {
   font-family: var(--font);
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 0.1em;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
-  margin-bottom: 8px;
+  color: var(--text);
+  padding-bottom: 15px;
+  margin-bottom: 0;
 }
 
 .project-subtitle {
   font-family: var(--font);
-  font-size: 13px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
   color: var(--text-light);
+}
+
+/* Project modules — Adobe .standard-modules defaults + per-module inline overrides */
+.project-modules {
+  width: 100%;
+}
+
+.project-module {
+  clear: both;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  word-break: break-word;
+  box-sizing: border-box;
+}
+
+.project-modules.standard-modules::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+/* Center width-constrained images (e.g. width:60%) like Adobe */
+figure.project-module.project-module-image {
+  clear: none;
+}
+
+figure.project-module-image:not([style*='float']) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Found: Adobe staggered floats (50% left, then 40% right below it) */
+figure.project-module-image[style*='float:left'],
+figure.project-module-image[style*='float: left'],
+figure.project-module-image[style*='float:right'],
+figure.project-module-image[style*='float: right'] {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+figure.project-module-image[style*='float:left'],
+figure.project-module-image[style*='float: left'] {
+  float: left;
+  clear: both;
+}
+
+figure.project-module-image[style*='float:right'],
+figure.project-module-image[style*='float: right'] {
+  float: right;
+  clear: both;
+}
+
+.standard-modules .project-module-text {
+  clear: both;
+}
+
+.project-module--center,
+.project-module--center .project-section {
+  text-align: center;
+}
+
+/* .standard-modules .image */
+.project-module-image {
+  display: block;
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+.project-module-image img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+
+/* .standard-modules .button */
+.project-module-button {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* .standard-modules .text */
+.standard-modules .project-module-text {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Left-aligned copy lines up with full-width hero (Adobe rich-text left) */
+.standard-modules .project-module-text.project-module--center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.standard-modules .project-module-text:has(.rich-text-body[style*="text-align:left"]) {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.standard-modules .project-module-text:has(.about-bio) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .standard-modules .video / .embed */
+.project-module-video,
+.project-module-embed {
+  padding-top: 0;
+  padding-bottom: 10px;
+}
+
+/* .standard-modules .media_collection */
+.project-module-media-collection {
+  padding-top: 0;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
+.media-collection-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -4px;
+}
+
+.media-collection-grid .collection-item {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 4px 8px;
+  margin: 0;
+}
+
+.media-collection-grid figure.collection-item {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.media-collection-grid .collection-item img {
+  width: 100%;
+  display: block;
 }
 
 .project-hero {
   width: 100%;
   display: block;
-  margin-bottom: 24px;
 }
 
 .project-hero img {
@@ -246,50 +452,152 @@ a {
   font-family: var(--font);
 }
 
+/* Adobe button-module */
 .play-btn-wrap {
   text-align: center;
-  margin-bottom: 48px;
+  margin: 0;
 }
 
 .play-btn {
-  display: inline-block;
-  background: #1a1a1a;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 100%;
+  background: #222;
   color: #fff;
   font-family: var(--font);
-  font-size: 13px;
-  padding: 12px 32px;
-  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 40px;
+  border: none;
+  border-radius: 100px;
   cursor: pointer;
-  transition: opacity 0.2s;
+  white-space: nowrap;
+  padding: 0;
+  transition: background-color 0.15s;
+}
+
+.play-btn::before,
+.play-btn::after {
+  content: '';
+  display: block;
+  width: 30px;
 }
 
 .play-btn:hover {
-  opacity: 0.75;
+  background-color: rgba(34, 34, 34, 0.75);
+  text-decoration: line-through;
+  opacity: 1;
 }
 
 .project-section {
-  max-width: 640px;
-  margin: 0 auto 40px;
+  margin: 0;
 }
 
-.project-section-title {
+/* Adobe .standard-modules .rich-text */
+.standard-modules .rich-text .rich-text-body {
+  text-align: center;
+}
+
+.standard-modules .rich-text .rich-text-body[style*="text-align:left"] {
+  text-align: left;
+}
+
+.standard-modules .rich-text .sub-title,
+.standard-modules .project-section-title {
   font-family: var(--font);
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: inherit;
+  color: var(--text);
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 0;
   letter-spacing: 0.02em;
 }
 
-.project-section p,
-.project-section li {
+.standard-modules .rich-text .rich-text-body > .sub-title:first-child,
+.standard-modules .project-section > .project-section-title:first-child {
+  padding-top: 0;
+}
+
+/* Spacer after heading (Adobe: empty sub-title with <br>) */
+.standard-modules .rich-text .sub-title:has(br:only-child) {
+  padding-top: 15px;
+  padding-bottom: 0;
+  line-height: 0;
+  font-size: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.standard-modules .project-section .project-section-title {
+  padding-bottom: 15px;
+}
+
+.standard-modules .rich-text .rich-text-body > div:not(.sub-title),
+.standard-modules .project-section p:not(.project-section-title),
+.standard-modules .project-section li {
   font-family: var(--font);
-  font-size: 13px;
-  line-height: 2;
-  color: #444;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  text-align: inherit;
+  color: var(--text-light);
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+/* Section break / last line in block (Adobe: padding-bottom on final div in group) */
+.standard-modules .rich-text .rich-text-body > div:not(.sub-title):has(+ .sub-title),
+.standard-modules .rich-text .rich-text-body > div:not(.sub-title):last-child,
+.standard-modules .rich-text .rich-text-body > div:not(.sub-title):empty {
+  padding-bottom: 20px;
+}
+
+.standard-modules .project-section p:not(.project-section-title):last-of-type {
+  padding-bottom: 20px;
 }
 
 .project-section ul {
   list-style: none;
+}
+
+.hero-video-wrap {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.hero-video-wrap video {
+  width: 100%;
+  display: block;
+}
+
+.hero-video-wrap--embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-video-wrap--embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.project-module-embed {
+  text-align: center;
 }
 
 .project-media {
@@ -334,44 +642,85 @@ a {
   margin: 32px 0;
 }
 
-/* ===== ABOUT PAGE ===== */
-.about-content {
-  flex: 1;
-  padding: 60px 60px 80px 20px;
-  max-width: 680px;
+/* ===== BACK TO TOP + SITE FOOTER (Adobe MyPortfolio) ===== */
+/* Both live inside main content column so they share one center axis */
+.back-to-top {
+  clear: both;
+  text-align: center;
+  padding: 56px 0 32px;
 }
 
-.about-content h1 {
-  font-family: var(--font);
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 28px;
-  letter-spacing: 0.02em;
-}
-
-.about-content p {
-  font-family: var(--font);
-  font-size: 13px;
-  line-height: 1.9;
-  color: #333;
-  margin-bottom: 18px;
-}
-
-.contact-links {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.contact-links a {
-  font-family: var(--font);
-  font-size: 12px;
+.back-to-top a {
+  display: inline-block;
   color: var(--text-light);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-.contact-links a:hover {
+.back-to-top a:hover {
   color: var(--text);
+}
+
+.site-footer {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  padding: 0 0 56px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.site-footer-social ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  margin: 0 0 20px;
+  padding: 0;
+}
+
+.site-footer-social a {
+  color: var(--text-light);
+  display: inline-block;
+  line-height: 0;
+}
+
+.site-footer-social a:hover {
+  color: var(--text);
+}
+
+.site-footer-icon {
+  width: 24px;
+  height: 20px;
+  fill: currentColor;
+  display: block;
+}
+
+.site-footer,
+.site-footer a,
+.site-footer-copy {
+  color: var(--text-footer);
+}
+
+.site-footer-copy {
+  font-size: 12px;
+  line-height: 16px;
+  margin: 0;
+}
+
+/* ===== ABOUT PAGE (Adobe: header "About", 30% photo, bio text) ===== */
+.about-bio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: var(--text-light);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 /* ===== MOBILE TOP BAR ===== */
@@ -410,13 +759,18 @@ a {
   display: block;
   text-align: center;
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.02em;
   color: var(--text-light);
-  margin-bottom: 32px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 .mobile-menu-section {
-  margin-bottom: 28px;
+  margin-bottom: 0;
+  padding-bottom: 30px;
 }
 
 .mobile-menu-section-title {
@@ -424,25 +778,32 @@ a {
   text-align: center;
   font-family: var(--font);
   font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 0.06em;
+  font-weight: 700;
+  letter-spacing: 0.02em;
   text-transform: uppercase;
   color: var(--text);
-  margin-bottom: 16px;
+  margin-bottom: 0;
+  padding-bottom: 16px;
+  line-height: 13px;
 }
 
 .mobile-menu-section ul {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: block;
+}
+
+.mobile-menu-section ul li {
+  padding-bottom: 10px;
 }
 
 .mobile-menu-section ul a {
   display: block;
   text-align: center;
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 13px;
+  letter-spacing: 0.02em;
   color: var(--text-light);
 }
 
@@ -458,14 +819,120 @@ a {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 932px) {
+  .home-layout,
+  .project-layout {
+    width: 100%;
+    padding: 0 5%;
+    box-sizing: border-box;
+  }
+
   .sidebar,
   .project-sidebar {
     display: none;
   }
 
-  .home-layout,
-  .project-layout {
+  .project-content,
+  .grid-area {
+    width: 100%;
+  }
+
+  .project-modules .project-module-image,
+  .project-modules .project-module-text,
+  .project-modules .project-module-video,
+  .project-modules .project-module-embed,
+  .project-modules .project-module-media-collection {
+    width: 100% !important;
+  }
+
+  figure.project-module-image[style*='float'] {
+    float: none !important;
+    clear: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-modules .project-module-button {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .project-header {
+    padding-top: 34px;
+    padding-bottom: 20px;
+  }
+
+  .project-title {
+    font-size: 22px;
+    line-height: 23px;
+    padding-bottom: 11px;
+  }
+
+  .project-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .standard-modules .rich-text .sub-title,
+  .standard-modules .project-section-title {
+    font-size: 17px;
+    line-height: 19px;
+    padding-top: 11px;
+  }
+
+  .standard-modules .rich-text .sub-title:has(br:only-child) {
+    padding-top: 11px;
+  }
+
+  .standard-modules .project-section .project-section-title {
+    padding-bottom: 11px;
+  }
+
+  .standard-modules .rich-text .rich-text-body > div:not(.sub-title),
+  .standard-modules .project-section p:not(.project-section-title),
+  .standard-modules .project-section li {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .standard-modules .rich-text .rich-text-body > div:not(.sub-title):has(+ .sub-title),
+  .standard-modules .rich-text .rich-text-body > div:not(.sub-title):last-child,
+  .standard-modules .rich-text .rich-text-body > div:not(.sub-title):empty {
+    padding-bottom: 14px;
+  }
+
+  .standard-modules .project-section p:not(.project-section-title):last-of-type {
+    padding-bottom: 14px;
+  }
+
+  .about-bio {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 14px;
+  }
+
+  .back-to-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .back-to-top a {
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .site-footer {
+    padding-bottom: 28px;
+    padding-top: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+
+  .home-layout {
     flex-direction: column;
   }
 
@@ -484,10 +951,11 @@ a {
   .mobile-bar-logo {
     font-family: var(--font);
     font-size: 15px;
-    font-weight: bold;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    text-transform: none;
     color: var(--text);
+    line-height: 1.2;
   }
 
   .mobile-bar-hamburger {
@@ -508,7 +976,7 @@ a {
   }
 
   .grid-area {
-    padding: 12px 16px 40px;
+    padding: 0;
   }
 
   .project-grid {
@@ -516,17 +984,18 @@ a {
     gap: 28px;
   }
 
-  .project-content,
-  .about-content {
-    padding: 20px 20px 60px;
+  .project-content {
+    padding: 0;
   }
 
   .media-row {
     grid-template-columns: 1fr;
   }
 
-  .project-header {
-    margin-bottom: 20px;
+  .play-btn {
+    font-size: 14px;
+    height: 38px;
+    line-height: 38px;
   }
 }
 
