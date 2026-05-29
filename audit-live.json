@@ -1,0 +1,170 @@
+[
+  {
+    "local": "a-photo-studio",
+    "live": "a-photo-studio",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/SyRv7Nht_CC/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "sincerely-me",
+    "live": "sincerely-me",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/-8GmkSS-PoR/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "pay-attention",
+    "live": "pay-attention",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/E4bNKdjKrh4/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "lost-horizon",
+    "live": "lost-horizon",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/7HIidG3USBo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "night-at-the-museum",
+    "live": "night-at-the-museum",
+    "buttons": [
+      {
+        "href": "https://nightatthemuseum.humspace.ucla.edu/",
+        "label": "Link to Website"
+      }
+    ],
+    "videos": []
+  },
+  {
+    "local": "allow-notifications",
+    "live": "allow-notifications",
+    "buttons": [
+      {
+        "href": "https://yfsun0920.itch.io/allow-notifications",
+        "label": "Click here to Play"
+      }
+    ],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/V5qbmqZ9FiE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "flower-ball",
+    "live": "flower-ball",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/FIKqcNGomKx/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "moody-me",
+    "live": "moodyme",
+    "buttons": [
+      {
+        "href": "https://yfsun0920.itch.io/moodyme",
+        "label": "Click here to Play"
+      }
+    ],
+    "videos": []
+  },
+  {
+    "local": "a-window",
+    "live": "a-window",
+    "buttons": [
+      {
+        "href": "https://editor.p5js.org/yf_sun/full/UqKLeNwYL",
+        "label": "CLICK HERE TO VIEW"
+      }
+    ],
+    "videos": []
+  },
+  {
+    "local": "cura",
+    "live": "cura",
+    "buttons": [],
+    "videos": [
+      "https://www.youtube.com/embed/GrFyL5cidkY"
+    ]
+  },
+  {
+    "local": "game-for-good",
+    "live": "project-gc",
+    "buttons": [
+      {
+        "href": "https://itch.io/jam/gameforgoodgamejam2022",
+        "label": "Game Jam Website"
+      }
+    ],
+    "videos": []
+  },
+  {
+    "local": "wheels",
+    "live": "wheels",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/PXL9BUp5dZ6/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "bubble",
+    "live": "bubble",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/4qyJcabPa3q/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "sunflower",
+    "live": "sunflower",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/V3xXywa8xLo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "found",
+    "live": "found",
+    "buttons": [],
+    "videos": []
+  },
+  {
+    "local": "in-the-mist",
+    "live": "in-the-mist",
+    "buttons": [],
+    "videos": []
+  },
+  {
+    "local": "sleepless",
+    "live": "sleepless-in",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/Uj9mBbRAg3U/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "3d-interactive-animation",
+    "live": "a-photo-studio",
+    "buttons": [],
+    "videos": [
+      "https://www-ccv.adobe.io/v1/player/ccv/SyRv7Nht_CC/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+    ]
+  },
+  {
+    "local": "digital-humanities",
+    "live": "night-at-the-museum",
+    "buttons": [
+      {
+        "href": "https://nightatthemuseum.humspace.ucla.edu/",
+        "label": "Link to Website"
+      }
+    ],
+    "videos": []
+  }
+]
