@@ -54,6 +54,7 @@ a {
 .home-layout,
 .project-layout {
   display: flex;
+  align-items: flex-start;
   max-width: var(--site-max);
   margin: 0 auto;
   width: var(--site-width);
@@ -65,10 +66,11 @@ a {
 .project-sidebar {
   flex: 0 0 var(--sidebar-flex);
   max-width: var(--sidebar-max);
-  padding: 60px 16px 40px 0;
+  padding: 0 16px 40px 0;
   box-sizing: border-box;
 }
 
+/* Adobe .logo-wrap */
 .sidebar-logo {
   font-family: var(--font);
   font-size: 24px;
@@ -77,6 +79,8 @@ a {
   text-transform: none;
   display: block;
   margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
   line-height: 28px;
 }
 
@@ -163,10 +167,11 @@ a {
 }
 
 /* ===== PROJECT GRID ===== */
+/* Adobe .project-covers */
 .grid-area {
   flex: 1;
   min-width: 0;
-  padding: 0;
+  padding: 40px 0 0;
 }
 
 .project-grid {
@@ -837,6 +842,10 @@ figure.project-module-image[style*='float: right'] {
     width: 100%;
   }
 
+  .grid-area {
+    padding-top: 0;
+  }
+
   .project-modules .project-module-image,
   .project-modules .project-module-text,
   .project-modules .project-module-video,
@@ -976,7 +985,12 @@ figure.project-module-image[style*='float: right'] {
   }
 
   .grid-area {
-    padding: 0;
+    padding-top: 18px;
+  }
+
+  .sidebar-logo {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .project-grid {
